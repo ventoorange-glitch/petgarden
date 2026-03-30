@@ -52,24 +52,24 @@ img { max-width: 100%; display: block; }
 
 /* ── Logo ── */
 .nav-logo {
-  width: 48px; height: 48px;
+  width: 52px; height: 52px;
   object-fit: contain;
   flex-shrink: 0;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.10);
 }
 .hero-logo-big {
-  width: 210px; height: 210px;
+  width: 230px; height: 230px;
   object-fit: contain;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-  filter: drop-shadow(0 8px 24px rgba(0,0,0,.25));
 }
 .footer-logo {
-  width: 44px; height: 44px;
+  width: 52px; height: 52px;
   object-fit: contain;
-  filter: brightness(0) invert(1);
-  opacity: .85;
+  background: #fff;
+  border-radius: 50%;
+  padding: 4px;
 }
 
 /* ── Section Header ── */
@@ -356,15 +356,14 @@ img { max-width: 100%; display: block; }
 }
 .hero-card {
   width: 320px; height: 360px;
-  background: rgba(255,255,255,.1);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(255,255,255,.2);
+  background: #ffffff;
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: visible;
+  box-shadow: 0 24px 64px rgba(0,0,0,.22);
 }
 .hero-paw-bg {
   display: flex;
@@ -534,6 +533,11 @@ img { max-width: 100%; display: block; }
   font-weight: 800;
   font-size: 15px;
   color: var(--green-dark);
+}
+.map-logo-pill img {
+  border-radius: 50%;
+  background: var(--cream);
+  padding: 2px;
 }
 .map-card iframe {
   width: 100%;
