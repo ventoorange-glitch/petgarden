@@ -50,6 +50,24 @@ img { max-width: 100%; display: block; }
 
 .section { padding: 96px 0; }
 
+/* ── Real Logo ── */
+.nav-logo {
+  width: 44px; height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,.08));
+}
+.hero-logo-big {
+  width: 200px; height: 200px;
+  object-fit: contain;
+}
+.footer-logo {
+  width: 40px; height: 40px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: .85;
+}
+
 /* ── Section Header ── */
 .section-header {
   text-align: center;
@@ -536,6 +554,89 @@ img { max-width: 100%; display: block; }
 .map-info-row a { color: var(--green-main); font-weight: 700; }
 
 /* ══════════════════════════════════════
+   TRÁMITES PORTUARIOS — featured card
+══════════════════════════════════════ */
+.service-card--featured {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #e8f4fd 0%, #e3f2e8 100%);
+  border: 2px solid #b3d9f0;
+  padding: 36px;
+}
+.service-card-featured-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: center;
+}
+.service-card--featured h3 {
+  font-size: 22px;
+  color: var(--green-dark);
+  margin-bottom: 14px;
+}
+.service-card--featured p {
+  color: var(--text-mid);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.tramites-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.tramites-list li {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+.btn-tramites {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--green-main);
+  color: #fff;
+  font-weight: 800;
+  font-size: 15px;
+  padding: 14px 28px;
+  border-radius: 100px;
+  box-shadow: 0 4px 16px rgba(45,106,79,.3);
+  transition: background var(--transition), transform var(--transition);
+}
+.btn-tramites svg { width: 18px; height: 18px; }
+.btn-tramites:hover { background: var(--green-dark); transform: translateY(-2px); }
+
+.tramites-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.plane-circle {
+  width: 130px; height: 130px;
+  background: linear-gradient(135deg, var(--green-main), #1e88e5);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  box-shadow: var(--shadow-md);
+}
+.plane-emoji { font-size: 40px; }
+.paw-emoji   { font-size: 24px; }
+.tramites-tag {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--green-main);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+/* ══════════════════════════════════════
    REELS SECTION
 ══════════════════════════════════════ */
 .reels-section { background: var(--white); }
@@ -554,6 +655,7 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   aspect-ratio: 9/16;
   background: linear-gradient(135deg, #1a1a2e 0%, #2d6a4f 100%);
+  display: block;
   cursor: pointer;
   transition: transform var(--transition), box-shadow var(--transition);
   box-shadow: var(--shadow-sm);
@@ -571,24 +673,15 @@ img { max-width: 100%; display: block; }
   display: block;
 }
 
-/* Placeholder thumb */
-.reel-placeholder {
-  width: 100%; height: 100%;
+/* Placeholder (shown when image is missing) */
+.reel-ph {
+  position: absolute;
+  inset: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-}
-.reel-placeholder .paw-bg {
-  font-size: 48px;
-  opacity: .3;
-}
-.reel-placeholder .reel-num {
-  font-size: 13px;
-  font-weight: 700;
-  color: rgba(255,255,255,.4);
-  letter-spacing: .1em;
+  font-size: 52px;
+  opacity: .25;
 }
 
 .reel-overlay {
@@ -626,45 +719,43 @@ img { max-width: 100%; display: block; }
 .reel-footer {
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  padding: 16px 14px 14px;
-  background: linear-gradient(to top, rgba(0,0,0,.75) 0%, transparent 100%);
+  padding: 40px 14px 14px;
+  background: linear-gradient(to top, rgba(0,0,0,.7) 0%, transparent 100%);
   color: #fff;
 }
 .reel-footer .reel-user {
   font-size: 12px;
   font-weight: 700;
-  opacity: .85;
-  margin-bottom: 4px;
-}
-.reel-footer .reel-caption {
-  font-size: 11px;
-  opacity: .7;
-  line-height: 1.4;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  opacity: .9;
 }
 
 .reels-cta { text-align: center; }
 
-/* Loading state */
-.reels-loading {
-  grid-column: 1 / -1;
-  text-align: center;
-  padding: 60px 0;
-  color: var(--text-light);
-  font-size: 15px;
+/* ══════════════════════════════════════
+   VENTO ORANGE CREDIT BAR
+══════════════════════════════════════ */
+.vento-bar {
+  background: #0d0d0d;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
-.spinner {
-  width: 36px; height: 36px;
-  border: 3px solid var(--green-pale);
-  border-top-color: var(--green-main);
-  border-radius: 50%;
-  animation: spin .8s linear infinite;
-  margin: 0 auto 16px;
+.vento-label {
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  color: rgba(255,255,255,.45);
+  font-weight: 600;
+  letter-spacing: .04em;
 }
-@keyframes spin { to { transform: rotate(360deg); } }
+.vento-logo {
+  height: 22px;
+  width: auto;
+  opacity: .85;
+  transition: opacity var(--transition);
+}
+.vento-logo:hover { opacity: 1; }
 
 /* ══════════════════════════════════════
    SOCIALS
@@ -790,6 +881,9 @@ img { max-width: 100%; display: block; }
 
   .reels-grid { grid-template-columns: repeat(2, 1fr); }
 
+  .service-card-featured-inner { grid-template-columns: 1fr; }
+  .tramites-visual { display: none; }
+
   .footer-inner { flex-direction: column; text-align: center; }
   .footer-links { justify-content: center; }
 }
@@ -798,4 +892,5 @@ img { max-width: 100%; display: block; }
   .section { padding: 64px 0; }
   .reels-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .services-grid { grid-template-columns: 1fr; }
+  .service-card--featured { padding: 24px; }
 }

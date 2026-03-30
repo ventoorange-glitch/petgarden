@@ -15,16 +15,7 @@
   <header class="navbar">
     <div class="nav-inner">
       <a href="#" class="brand">
-        <div class="logo-mark">
-          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Paw icon -->
-            <circle cx="22" cy="14" r="6" fill="#fff"/>
-            <circle cx="38" cy="14" r="6" fill="#fff"/>
-            <circle cx="12" cy="26" r="5" fill="#fff"/>
-            <circle cx="48" cy="26" r="5" fill="#fff"/>
-            <ellipse cx="30" cy="40" rx="14" ry="12" fill="#fff"/>
-          </svg>
-        </div>
+        <img src="logo.svg" alt="Pet Garden Veterinaria" class="nav-logo" />
         <span class="brand-name">Pet Garden <em>Veterinaria</em></span>
       </a>
       <nav class="nav-links">
@@ -82,25 +73,7 @@
     </div>
     <div class="hero-visual">
       <div class="hero-card floating">
-        <div class="hero-paw-bg">
-          <svg class="big-paw" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="72" cy="45" r="22" fill="#c8f7c5" opacity=".7"/>
-            <circle cx="128" cy="45" r="22" fill="#c8f7c5" opacity=".7"/>
-            <circle cx="38" cy="85" r="18" fill="#c8f7c5" opacity=".7"/>
-            <circle cx="162" cy="85" r="18" fill="#c8f7c5" opacity=".7"/>
-            <ellipse cx="100" cy="138" rx="50" ry="45" fill="#2d6a4f" opacity=".15"/>
-            <ellipse cx="100" cy="138" rx="38" ry="34" fill="#2d6a4f" opacity=".25"/>
-          </svg>
-          <div class="hero-icon-ring">
-            <svg viewBox="0 0 80 80" fill="none">
-              <circle cx="26" cy="16" r="9" fill="#2d6a4f"/>
-              <circle cx="54" cy="16" r="9" fill="#2d6a4f"/>
-              <circle cx="14" cy="36" r="7" fill="#2d6a4f"/>
-              <circle cx="66" cy="36" r="7" fill="#2d6a4f"/>
-              <ellipse cx="40" cy="56" rx="20" ry="18" fill="#2d6a4f"/>
-            </svg>
-          </div>
-        </div>
+        <img src="logo.svg" alt="Pet Garden Veterinaria" class="hero-logo-big" />
         <div class="floating-badge top-right">
           <span>🐾</span> ¡Abiertos!
         </div>
@@ -120,36 +93,78 @@
         <p>Cuidamos a tu mejor amigo con los más altos estándares médicos y mucho cariño.</p>
       </div>
       <div class="services-grid">
+
         <div class="service-card">
           <div class="service-icon" style="background:#e8f5e9;">🩺</div>
           <h3>Consulta Médica</h3>
           <p>Diagnóstico y tratamiento por veterinarios especializados con años de experiencia.</p>
         </div>
+
         <div class="service-card">
           <div class="service-icon" style="background:#fff3e0;">💉</div>
           <h3>Vacunación</h3>
           <p>Plan completo de vacunación para perros y gatos, protegiendo su salud desde pequeños.</p>
         </div>
+
         <div class="service-card">
           <div class="service-icon" style="background:#fce4ec;">✂️</div>
           <h3>Estética & Grooming</h3>
           <p>Baño, corte, cepillado y todo el spa que tu mascota merece para lucir impecable.</p>
         </div>
+
         <div class="service-card">
           <div class="service-icon" style="background:#e3f2fd;">💊</div>
           <h3>Farmacia Veterinaria</h3>
           <p>Medicamentos, suplementos y productos de salud disponibles en nuestra tienda.</p>
         </div>
+
         <div class="service-card">
           <div class="service-icon" style="background:#f3e5f5;">🔬</div>
           <h3>Laboratorio Clínico</h3>
           <p>Exámenes de sangre y diagnósticos rápidos para un tratamiento oportuno.</p>
         </div>
+
         <div class="service-card">
           <div class="service-icon" style="background:#e8f5e9;">🛒</div>
           <h3>Tienda Pet</h3>
           <p>Alimentos, accesorios y todo lo que necesitas para el bienestar de tu mascota.</p>
         </div>
+
+        <!-- ✈️ TRÁMITES PORTUARIOS — featured card, full width -->
+        <div class="service-card service-card--featured">
+          <div class="service-card-featured-inner">
+            <div>
+              <div class="service-icon" style="background:#fff8e1;">✈️</div>
+              <h3>Trámites Portuarios para Viajes Internacionales</h3>
+              <p>
+                ¿Vas a viajar al exterior con tu mascota? Te ayudamos con toda la documentación
+                requerida: certificados sanitarios de exportación, aval del ICA, vacuna antirrábica
+                vigente, microchip, título de viaje y todos los requisitos según el país de destino.
+                <br /><br />
+                Acompañamos a tu peludo en cada paso del proceso para que viajes con tranquilidad.
+              </p>
+              <ul class="tramites-list">
+                <li>📋 Certificado sanitario de exportación (ICA)</li>
+                <li>💉 Vacuna antirrábica y carnet de vacunación</li>
+                <li>🔖 Microchip ISO 11784/11785</li>
+                <li>🛂 Requisitos específicos por país de destino</li>
+                <li>📁 Gestión completa del expediente</li>
+              </ul>
+              <a href="tel:+573508372309" class="btn-tramites">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+                Consultar trámite
+              </a>
+            </div>
+            <div class="tramites-visual">
+              <div class="plane-circle">
+                <span class="plane-emoji">✈️</span>
+                <span class="paw-emoji">🐾</span>
+              </div>
+              <p class="tramites-tag">¡Viaja con tu mascota!</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -177,13 +192,7 @@
         <div class="map-card">
           <div class="map-header">
             <div class="map-logo-pill">
-              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
-                <circle cx="22" cy="14" r="6" fill="#2d6a4f"/>
-                <circle cx="38" cy="14" r="6" fill="#2d6a4f"/>
-                <circle cx="12" cy="26" r="5" fill="#2d6a4f"/>
-                <circle cx="48" cy="26" r="5" fill="#2d6a4f"/>
-                <ellipse cx="30" cy="40" rx="14" ry="12" fill="#2d6a4f"/>
-              </svg>
+              <img src="logo.svg" alt="Pet Garden" width="32" height="32" />
               <span>Pet Garden Veterinaria</span>
             </div>
           </div>
@@ -222,25 +231,92 @@
     </div>
   </section>
 
-  <!-- ═══════════ INSTAGRAM REELS FEED ═══════════ -->
+  <!-- ═══════════ INSTAGRAM REELS ═══════════ -->
+  <!--
+    HOW TO UPDATE THE REELS:
+    1. Open Instagram on your phone → go to @petgardenveterinaria → Reels tab
+    2. Take a screenshot of each reel thumbnail you want to feature
+    3. Save each image as: reels/reel1.jpg, reels/reel2.jpg … reels/reel6.jpg
+    4. Copy the reel's share link and paste it into the href below
+    That's it! The images will appear automatically.
+  -->
   <section class="section reels-section" id="reels">
     <div class="container">
       <div class="section-header">
         <span class="section-tag ig-tag">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
           @petgardenveterinaria
         </span>
         <h2>Últimos Reels</h2>
         <p>Síguenos en Instagram y descubre el día a día de nuestras mascotas y servicios.</p>
       </div>
 
-      <!-- Reels Grid -->
-      <div class="reels-grid" id="reels-grid">
-        <!-- Cards inserted by JS -->
+      <div class="reels-grid">
+
+        <!-- REEL 1 — replace href with the real reel URL -->
+        <a class="reel-card" href="https://www.instagram.com/petgardenveterinaria/reels/" target="_blank" rel="noopener">
+          <img src="reels/reel1.jpg" alt="Reel 1" class="reel-thumb" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="reel-ph" style="display:none">🐾</div>
+          <div class="reel-overlay"></div>
+          <div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <span class="reel-badge">REEL</span>
+          <div class="reel-footer"><div class="reel-user">@petgardenveterinaria</div></div>
+        </a>
+
+        <!-- REEL 2 -->
+        <a class="reel-card" href="https://www.instagram.com/petgardenveterinaria/reels/" target="_blank" rel="noopener">
+          <img src="reels/reel2.jpg" alt="Reel 2" class="reel-thumb" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="reel-ph" style="display:none">🐶</div>
+          <div class="reel-overlay"></div>
+          <div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <span class="reel-badge">REEL</span>
+          <div class="reel-footer"><div class="reel-user">@petgardenveterinaria</div></div>
+        </a>
+
+        <!-- REEL 3 -->
+        <a class="reel-card" href="https://www.instagram.com/petgardenveterinaria/reels/" target="_blank" rel="noopener">
+          <img src="reels/reel3.jpg" alt="Reel 3" class="reel-thumb" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="reel-ph" style="display:none">🐱</div>
+          <div class="reel-overlay"></div>
+          <div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <span class="reel-badge">REEL</span>
+          <div class="reel-footer"><div class="reel-user">@petgardenveterinaria</div></div>
+        </a>
+
+        <!-- REEL 4 -->
+        <a class="reel-card" href="https://www.instagram.com/petgardenveterinaria/reels/" target="_blank" rel="noopener">
+          <img src="reels/reel4.jpg" alt="Reel 4" class="reel-thumb" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="reel-ph" style="display:none">✂️</div>
+          <div class="reel-overlay"></div>
+          <div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <span class="reel-badge">REEL</span>
+          <div class="reel-footer"><div class="reel-user">@petgardenveterinaria</div></div>
+        </a>
+
+        <!-- REEL 5 -->
+        <a class="reel-card" href="https://www.instagram.com/petgardenveterinaria/reels/" target="_blank" rel="noopener">
+          <img src="reels/reel5.jpg" alt="Reel 5" class="reel-thumb" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="reel-ph" style="display:none">🩺</div>
+          <div class="reel-overlay"></div>
+          <div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <span class="reel-badge">REEL</span>
+          <div class="reel-footer"><div class="reel-user">@petgardenveterinaria</div></div>
+        </a>
+
+        <!-- REEL 6 -->
+        <a class="reel-card" href="https://www.instagram.com/petgardenveterinaria/reels/" target="_blank" rel="noopener">
+          <img src="reels/reel6.jpg" alt="Reel 6" class="reel-thumb" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="reel-ph" style="display:none">🌿</div>
+          <div class="reel-overlay"></div>
+          <div class="reel-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <span class="reel-badge">REEL</span>
+          <div class="reel-footer"><div class="reel-user">@petgardenveterinaria</div></div>
+        </a>
+
       </div>
 
       <div class="reels-cta">
-        <a href="https://www.instagram.com/petgardenveterinaria/" target="_blank" rel="noopener" class="btn-instagram">
+        <a href="https://www.instagram.com/petgardenveterinaria/reels/" target="_blank" rel="noopener" class="btn-instagram">
           <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
           Ver más en Instagram
         </a>
@@ -324,15 +400,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <div class="logo-mark small">
-          <svg viewBox="0 0 60 60" fill="none">
-            <circle cx="22" cy="14" r="6" fill="#fff"/>
-            <circle cx="38" cy="14" r="6" fill="#fff"/>
-            <circle cx="12" cy="26" r="5" fill="#fff"/>
-            <circle cx="48" cy="26" r="5" fill="#fff"/>
-            <ellipse cx="30" cy="40" rx="14" ry="12" fill="#fff"/>
-          </svg>
-        </div>
+        <img src="logo.svg" alt="Pet Garden Veterinaria" class="footer-logo" />
         <div>
           <strong>Pet Garden Veterinaria</strong>
           <p>Bogotá, Colombia</p>
@@ -346,6 +414,12 @@
       <p class="footer-copy">© 2026 Pet Garden Veterinaria. Hecho con 🐾 en Bogotá.</p>
     </div>
   </footer>
+
+  <!-- ═══════════ VENTO ORANGE CREDIT ═══════════ -->
+  <div class="vento-bar">
+    <span class="vento-label">Creado por</span>
+    <img src="vento-orange-logo.svg" alt="Vento Orange" class="vento-logo" />
+  </div>
 
   <script src="script.js"></script>
 </body>
