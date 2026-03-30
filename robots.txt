@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://petgarden.com.co/sitemap.xml
