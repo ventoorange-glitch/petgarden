@@ -558,6 +558,143 @@ img { max-width: 100%; display: block; }
 .map-info-row a { color: var(--green-main); font-weight: 700; }
 
 /* ══════════════════════════════════════
+   EQUIPO
+══════════════════════════════════════ */
+.equipo-section { background: var(--white); }
+
+.equipo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.equipo-card {
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid #eef2f0;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.equipo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Photo */
+.equipo-photo-wrap {
+  position: relative;
+  height: 300px;
+  background: linear-gradient(135deg, var(--green-main), var(--green-mid));
+  overflow: hidden;
+}
+.equipo-photo {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+.equipo-photo-ph {
+  width: 100%; height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  opacity: .35;
+}
+.equipo-badge {
+  position: absolute;
+  bottom: 16px; left: 16px;
+  background: var(--green-dark);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 100px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.equipo-badge--green {
+  background: #1565C0;
+}
+
+/* Info */
+.equipo-info {
+  padding: 28px;
+}
+.equipo-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+.equipo-title {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--green-mid);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-bottom: 16px;
+}
+.equipo-info p {
+  font-size: 15px;
+  color: var(--text-mid);
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+.equipo-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.equipo-tags span {
+  background: var(--green-pale);
+  color: var(--green-dark);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 100px;
+}
+
+/* Quote */
+.equipo-quote {
+  background: linear-gradient(135deg, var(--green-dark), var(--green-main));
+  border-radius: var(--radius-lg);
+  padding: 40px 48px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.quote-mark {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 80px;
+  line-height: .6;
+  color: rgba(255,255,255,.2);
+  margin-bottom: 16px;
+}
+.equipo-quote p {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.7;
+  color: rgba(255,255,255,.92);
+  max-width: 680px;
+  margin: 0 auto 16px;
+}
+.quote-author {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--green-light);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+@media (max-width: 900px) {
+  .equipo-grid { grid-template-columns: 1fr; }
+  .equipo-quote { padding: 32px 24px; }
+}
+
+/* ══════════════════════════════════════
    TRÁMITES PORTUARIOS — featured card
 ══════════════════════════════════════ */
 .service-card--featured {
